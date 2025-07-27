@@ -72,11 +72,11 @@ header a {
 	color: rgba(0, 0, 0, 0.8);
 }
 aside {
-	background: #FAFAFA;
+	background: #f8e2e2;
 }
 aside p {
 	border: 1px solid #bbb;
-	background: #ddd;
+	background: rgb(250, 245, 226);
 	color: black;
 }
 footer a {
@@ -84,8 +84,14 @@ footer a {
 }
 a {
 	color: #F80002;
+    cursor: pointer;
 }
-
+a:hover {
+    color: #db7474;
+}
+a:active {
+    color: #8a0808;
+}
 
 /* Positioning and margins */
 
