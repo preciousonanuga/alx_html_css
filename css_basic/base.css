@@ -57,7 +57,7 @@ table {
 
 body {
 	font-family: 'Josefin Sans', serif;
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(36, 1, 1, 0.8);
 }
 h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
@@ -65,32 +65,36 @@ h1, h2, h3, h4, h5, h6, header {
 article {
 }
 header {
-	border-bottom: 1px solid rgb(221,221,221);
+	border-bottom: 1px solid rgb(238, 192, 192);
 	transition: border-bottom-color 1s ease;
+    display: inline-flex;
 }
 header a {
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(36, 1, 1, 0.8);
 }
 aside {
 	background: #f8e2e2;
+    margin-top: 5px;
 }
 aside p {
-	border: 1px solid #bbb;
-	background: rgb(250, 245, 226);
+	border: 1px solid rgb(238, 192, 192);
+	background: rgb(250, 244, 226);
 	color: black;
 }
 footer a {
 	color: rgba(0, 0, 0, 0.8);
 }
 a {
-	color: #F80002;
+	color: #b30707;
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 500.3;
 }
 a:hover {
-    color: #db7474;
+    color: #fd9898;
 }
 a:active {
-    color: #8a0808;
+    color: #fa0404;
 }
 
 /* Positioning and margins */
@@ -115,7 +119,17 @@ header .right {
 	float: right;
 	margin: 0 10px 15px;
 }
-
+.x {
+    margin: 0px 0px 5px;
+    padding: 5px 3px 3px;
+    background-color: transparent;
+    width: 60px;
+    height: 15px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 192, 192);
+}
 
 /* Header */
 header {
@@ -125,11 +139,15 @@ header {
 header ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 23px 10px;
+    float: right;
 }
 header li {
 	display: inline;
 	vertical-align:middle;
+    justify-content: space-between;
+    padding: 0 20px;
+    
 }
 header li:first-child {
 	margin: 0;
@@ -144,12 +162,21 @@ header a {
 	text-decoration: none;
 }
 
-
+.nav-container {
+    display: inline-flex;
+    width: 100%;
+}
+.navbars{
+    margin-left: 20px;
+    padding-left: 500px;
+}
 /* Aside */
 
 aside p {
 	border-radius: 10px;
 	padding: 20px 20px;
+    color: #9c0505;
+    background-color: inherit;
 }
 
 
@@ -158,6 +185,14 @@ aside p {
 footer {
 	padding: 5px 15px;
 	height: 80px;
+    background-color: #fdd5d5;
+    border-top: 1px solid rgb(238, 192, 192);
+	transition: border-bottom-color 1s ease;
+}
+footer a {
+    color: #b30707;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 
@@ -203,4 +238,15 @@ h6 {
   header .right {
   	float: none;
   }
+}
+
+/* Image properties*/
+img {
+    width: 620px;
+    height: 650px;
+}
+img:hover{
+    width: 700px;
+    height: 700px;
+    transition: 0.4s ease-in-out;
 }
