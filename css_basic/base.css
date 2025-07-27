@@ -129,7 +129,18 @@ header .right {
     text-align: center;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid rgb(238, 192, 192);
+    border: 1px solid rgb(230, 178, 178);
+}
+.homepage {
+    margin: 0px 0px 5px;
+    padding: 5px 3px 3px;
+    background-color: transparent;
+    width: 95px;
+    height: 15px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgb(230, 178, 178);
 }
 
 /* Header */
