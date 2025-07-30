@@ -1,0 +1,2 @@
+SMILE SCHOOL
+HTML structure for a one-page responsive website based on a Figma design. This project focuses on semantic HTML layout, including header, banner, quote section, videos, membership plans, FAQ, and footer.
