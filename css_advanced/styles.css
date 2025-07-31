@@ -1,4 +1,465 @@
-*, *:before, *:after {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format("otf"),
+    url("assets/fonts/source-sans-pro/SourceSansPro-Black.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Spin Cycle OT ";
+  src: url("assets/fonts/Spin-Cycle-OT/spincycle_ot.otf") format("otf"),
+    url("assets/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro";
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Header */
+header nav {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 90px;
+  z-index: 1000;
+}
+
+nav img {
+    padding-top: 10px;
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    letter-spacing: 2.5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color:#c271ff;
+}
+
+.hero {
+  background: linear-gradient(to bottom, rgba(7, 22, 41, 0.2) 50%, #071629 100%), url("assets/images/background.png") no-repeat center top / cover;
+  background-blend-mode: normal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 80px 0px;
+}
+
+.hero h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    line-height: 1;
+    padding-bottom: 0px;
+}
+
+.keywords {
+    justify-content: space-evenly;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 20px 30px;
+    align-content: center;
+    justify-content: center;
+    display: inline-flex;
+    padding-top: 0;
+    letter-spacing: 2.5px;
+}
+
+.btn {
+    background-color: #c271ff;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 100px;
+    box-shadow: 2px 2px 8px #071629;
+}
+.btn:hover {
+    color: #c271ff;
+    background-color: #fff;
+}
+
+/* Learn from the pros */
+section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 10px 0px 40px 0px;
+  letter-spacing: 2px;
+}
+
+section h2 span {
+  color: #c271ff;
+  font-weight: 900;
+}
+
+.learn-section {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 20px 0px 0px 60px;
+    width: 150px;
+}
+
+.instructors article {
+  text-align: center;
+}
+
+.instructors img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.instructors h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.instructors p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.testimonials {
+  background: #c271ff;
+  display: flex;
+  padding: 100px 0px;
+  justify-content: center;
+  align-content: center;
+  margin: 0px 0px 0px;
+}
+
+.testimonial-content {
+    max-width: 1000px;
+    margin: 0 40px 0px 0px;
+    align-items: center;
+}
+
+.testimonial-contents {
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.testimonial-contents blockquote {
+    font-size: 20px;
+    margin: 5px 0 17px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.testimonial-contents h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-contents p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Tutorials Section */
+.tutorials-section {
+    background: #f8f9fa;
+    margin: 0;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.tutorials-section h2 {
+    color: #071629;
+    font-size: 32px;
+    margin: 25px 50px 60px;
+    font-weight: 500;
+}
+
+.tutorials-section span {
+    color: #c271ff;
+}
+
+.tutorials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.tutorial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: left;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.tutorial-card:hover {
+    transform: translateX(-10px); transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail img:first-child {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tutorial-card:hover .thumbnail img:first-child {
+  transform: scale(1.05);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  opacity: 0.95;
+  transition: all 0.3s ease;
+}
+
+.tutorial-card:hover .play-btn {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.tutorial-card h3 {
+  font-size: 17px;
+  margin: 10px 10px 8px;
+  color: #333;
+}
+
+.tutorial-card p {
+  margin: 0 10px 15px;
+  color: #555454;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 12px;
+  gap: 8px;
+}
+
+.author-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.author-info h4 {
+    color: #b25af5;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rating-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 15px;
+}
+
+.rating {
+  height: 15px;
+}
+
+.time {
+    display: inline-flex;
+    color: #c271ff;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Membership session */
+.membership-section {
+    background-color: #071629;
+    text-align: center;
+    color: #fff;
+    padding: 70px 50px 0px;
+}
+
+.membership-section h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.membership {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+  flex-wrap: wrap;
+}
+
+.membership > div {
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.membership > div:hover {
+  transform: translateY(-10px);
+}
+
+.membership img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.membership h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.membership p {
+    color: #d1d1d1;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Frequently asked questions*/
+.faq-section {
+    background-color: #fff;
+    color: #071629;
+    padding: 50px 20px;
+}
+
+.faq-section h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    text-align: left;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq > div {
+    padding: 30px;
+    line-height: 1.8;
+}
+.faq h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.faq p {
+    color: #5a5959;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Footer section */
+footer {
+  background: linear-gradient(135deg, #2c1b69 0%, #1b1b3a 100%);
+  color: white;
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content img {
+  height: 40px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+.social a {
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social a:hover {
+  color: #c271ff;
+  transform: translateY(-3px);
+}
+
+footer p {
+  opacity: 0.5;
+  font-size: 0.9rem;
+}
