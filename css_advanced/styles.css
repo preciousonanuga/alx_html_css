@@ -445,6 +445,7 @@ footer {
   display: flex;
   gap: 20px;
   color: white;
+  padding-right: 60px;
 }
 
 .social a {
