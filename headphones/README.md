@@ -65,10 +65,15 @@ Designing user-centered experiences without relying on pre-built components
 📂 Folder Structure
 
 📁 alx_html_css/
+
    └──📁 my-first-website/
+
       └── 📄 index.html
+
       ├── 📄 style.css
+
       └── 📁 assets/
+      
           └── 📄 images, fonts, etc.
 
 
