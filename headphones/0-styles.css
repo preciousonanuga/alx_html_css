@@ -1,0 +1,22 @@
+/* Font face and weight */
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format("otf"),
+    url("assets/fonts/source-sans-pro/SourceSansPro-Black.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spin Cycle OT ";
+  src: url("assets/fonts/Spin-Cycle-OT/spincycle_ot.otf") format("otf"),
+    url("assets/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Global reset */
+body {
+
+}
