@@ -40,7 +40,7 @@ Try resizing the browser or viewing on different devices!
 
 I’ve followed key accessibility guidelines:
 
-Proper use of heading hierarchy (<h1>, <h2>, etc.)
+Proper use of heading hierarchy (h1, h2, etc.)
 
 Alternative text for images
 
