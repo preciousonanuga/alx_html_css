@@ -70,10 +70,10 @@ Designing user-centered experiences without relying on pre-built components
 
       └── 📄 index.html
 
-      ├── 📄 style.css
+      ├── 📄 styles.css
 
       └── 📁 assets/
-      
+
           └── 📄 images, fonts, etc.
 
 
