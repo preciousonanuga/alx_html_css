@@ -1,0 +1,368 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("assets/fonts/source-sans-pro/SourceSansPro-Regular.otf") format("otf"),
+    url("assets/fonts/source-sans-pro/SourceSansPro-Black.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spin Cycle OT";
+  src: url("assets/fonts/Spin-Cycle-OT/spincycle_ot.otf") format("otf"),
+    url("assets/fonts/Spin-Cycle-OT/spincycle_3d_ot.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --main-color: #FF6565;
+  --text-color: white;
+  --font-family: "Source Sans Pro";
+  --small-font-size: 14px;
+  --normal-font-size: 20px;
+  --medium-font-size: 24px;
+  --big-font-size: 32px;
+}
+
+/* Global Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in;
+}
+
+body {
+  background:  url("../assets/images/headphones_hero_1.jpg") no-repeat center / cover;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  width: 100%;
+  align-content: center;
+  padding: 15px 0px;
+  z-index: 1000;
+  background: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 0px 80px;
+  width: 100%;
+}
+
+nav img {
+  width: 25%;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 0 0;
+}
+
+li {
+  list-style: none;
+  padding: 0 30px;
+  justify-content: center;
+  align-content: center;
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--text-color)
+}
+
+li a:hover {
+  color: var(--main-color);
+}
+
+.hero-section {
+  max-width: 100%;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.hero-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 20px 20px 20px;
+  margin-bottom: 80px;
+}
+
+.hero-content h1 {
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 1.3px;
+  line-height: 25px;
+  font-weight: bolder;
+  font-size: var(--big-font-size);
+}
+
+.hero-content p {
+  text-align: center;
+  margin: 3px 0px 60px;
+  font-size: var(--normal-font-size);
+  letter-spacing: -0.3px;
+}
+
+.btn-primary {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 15px;
+  background-color: var(--main-color);
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px rgb(14, 0, 0);
+  border: 0;
+  margin-bottom: 0px;
+}
+
+.btn-primary:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+.hero-para {
+  justify-self: center;
+  align-items: center;
+  width: 700px;
+  letter-spacing: 0.8px;
+  font-weight: lighter;
+  opacity: 80%;
+  line-height: 30px;
+  padding: 0px 50px;
+  text-align: center;
+}
+
+/* What we do section */
+.what-we-do {
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.what-we-do-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 70px 100px 70px ;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+.what-we-do-head h2 {
+  padding-bottom: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.what-we-do-head p {
+  text-align: center;
+  max-width: 600px;
+  letter-spacing: 0.9px;
+  color: #000000;
+  opacity: 90%;
+  font-weight: 500;
+}
+
+.what-we-do-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  padding: 20px 10px 10px;
+  margin-top: 10px;
+  margin-left: 130px;
+  gap: 50px;
+}
+
+.what-we-do-content {
+  line-height: 30px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.what-we-do-content img {
+  height: 100px;
+  width: 100px;
+}
+.what-we-do-content p {
+  text-align: center;
+  padding: 0 10px 30px;
+}
+
+/* Our Result Section */
+.our-results {
+  background: url("../assets/images/headphones_hero_2.jpg") no-repeat center / cover;
+}
+
+.our-results-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 70px 80px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.our-results-header h2 {
+  text-align: center;
+  margin: 0px 0px 50px;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.our-results-header p {
+  text-align: center;
+  letter-spacing: 0.9px;
+  color: var(--text-color);
+  font-weight: 500;
+  max-width: 750px;
+  opacity: 90%;
+  font-size: 19px;
+}
+
+.our-results_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 30px 0px 30px;
+  margin: 10px 10px 0px;
+  gap: 70px;
+}
+
+.our-results_content {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-results_content img {
+  position: relative;
+  overflow: visible;
+  width: 190px;
+}
+
+.play-btn {
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  top: 35%;
+  left: 16%;
+  width: 130px;
+  height: 100px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.play-btn h2 {
+  font-size: 45px;
+  font-weight: 900;
+  justify-content: center;
+  justify-self: center;
+  padding: 0px 0px 25px;
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: white;
+  color: black;
+  line-height: 40px;
+  padding: 100px;
+}
+
+.contact-us h2 {
+  padding: 40px 20px 50px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.contact-us form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0.5px 1px rgb(14, 0, 0);
+}
+
+.contact-us textarea {
+  height: 90px;
+}
+
+.contact-us button {
+  background: #ff4d4d;
+  border: none;
+  margin-top: 70px;
+  padding: 13px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 180px;
+  height: 40px;
+  align-self: center;
+  font-weight: 600;
+}
+
+.contact-us button:hover {
+  background: #ff1a1a;
+}
+
+/* Footer section */
+.footer-section {
+  width: 100%;
+  padding: 100px;
+  max-height: 270px;
+}
+
+.footer-head {
+  justify-content: space-between;
+  display: flex;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  color: white;
+  padding-right: 60px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-copy {
+  align-self: center;
+  text-align: center;
+  margin: 50px 0 0px;
+  padding-bottom: 50px;
+  opacity: 70%;
+}
